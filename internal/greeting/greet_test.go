@@ -11,7 +11,7 @@ func TestGreetOneName(t *testing.T) {
 	if err != nil {
 		t.Fatalf("err should be nil, got: %s", err.Error())
 	}
-	 want {
+	if got != want {
 		t.Fatalf("Wanted '%s', got '%s'", want, got)
 	}
 }
