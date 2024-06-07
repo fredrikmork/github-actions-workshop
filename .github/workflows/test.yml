@@ -31,5 +31,5 @@ jobs:
       # Also add checkout and setup go steps here, like in previous tasks
       - name: Verify formatting
         run: |
-          no_unformatted_files="$(gofmt -l $(git ls-files '*.go') | wc -l)"
+          no_unformatted_files="$(gofmt -l "$(git ls-files '*.go')" | wc -l)"
           exit "$no_unformatted_files"
